@@ -18,6 +18,7 @@ const classroomSchema = new Schema({
         type:Number,
         required:false,
     },
+    created_at: {type:Date,required:true,default:Date.now}
 });
 
 const classroomModel = mongoose.model("Classrooms",classroomSchema);
